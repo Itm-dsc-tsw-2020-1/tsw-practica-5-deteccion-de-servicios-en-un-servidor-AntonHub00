@@ -47,6 +47,7 @@ def get_hosts(network, mask):
         # Finds the available hosts (IPs) as a list
         pattern = '(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})'
         hosts = re.findall(pattern, output, re.MULTILINE)
+        print(f'{len(hosts)} hosts found')
         print('Done!\n')
         return hosts
 
