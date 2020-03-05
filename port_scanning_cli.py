@@ -80,6 +80,7 @@ def get_ports_info(hosts):
             final_result.append([host] + [result])
 
 
+            # Prints the current host info
             if result:
                 for port, state, service in result:
                     print(f'Port: {port} | State: {state} | Service: {service}')
